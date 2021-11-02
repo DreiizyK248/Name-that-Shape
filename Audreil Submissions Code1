@@ -1,0 +1,29 @@
+#include <iostream>
+#include <exception>
+#include <string>
+
+using namespace std;
+int main()
+{
+    cout << "What is you're name and age please enter you're age" << endl;
+    string name;
+
+    cout << "Enter you're age from 1 - 100:";
+
+    cout << "Enter the age";
+    int age;
+
+    std::cin >> age;
+    //Using the cin.fail fuction (when user enters alphabet instead of numbers)
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Incorrect command\n:";
+    }
+    else if (age)
+    
+    {
+       
+    }
+}
