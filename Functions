@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void welcome(); //function declaration
+
+int main() {
+
+  welcome(); //fuction call
+  return 0;
+}
+
+void welcome() { //function definition
+
+  cout << "Welcome to BSU" << endl;
+}
