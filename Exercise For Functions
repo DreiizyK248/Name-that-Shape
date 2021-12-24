@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+#include <array>
+#include <math.h>
+using namespace std;
+
+string rootValvues(double numB)
+{
+  cout << "\nThe root from 1-10 is: " << endl;
+  
+  double numA = 1;
+  
+  do
+  {
+  
+    cout << "[" << numA << "]" << " root valvue for " << numB << " is: ";
+    double x = 1 / numA;
+    double result = pow(numB, x);
+    cout << result << endl;
+    numA++;
+  } while (numA ! = 11);
+  
+  return "\nThe code is completed.";
+}
+
+int main()
+{
+
+  double number; //variable to store user response
+  cout << "Enter a number: "; // ask the user for an input
+  cin >> number; //get user input
+  while (cin.fail()) //error handling
+  {
+    cin.clear();
+    cin.ignore(1000, '\n');
+    cout << "Invalid input. Enter the number again:";
+    cin >> number;
+  }
+  
+  //output string returned by function
+  cout << rootValues(number);
+}
